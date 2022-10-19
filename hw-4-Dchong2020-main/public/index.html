@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Darion Chong </title>
+
+</head>
+<body>
+
+  <div id="create">
+    <h2> Create New Student</h2>
+    <form action="/students" method="post"></form>
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name" value="">
+
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" name="last_name" value="">
+
+    <label for="gpa">GPA: </label>
+    <input type="text" id="gpa" name="gpa" value="">
+
+    <label for="enrolled">Enrolled(True/False)</label>
+    <input type="text" id="enrolled" name="enrolled" value=""><
+
+    <input type="submit" value="submit">
+  </div>
+<div>
+  <h2>Get Student by ID</h2>
+  <label for= "record_id">Record ID</label>
+  <input type= "text" id ="record_id" name="record_id" value="">
+  
+  <button onclick="getStudentById()">Get Student</button>
+  
+  <div id="student_result" name="student_result"></div>
+ 
+</div>
+<div>
+  <h2>Delete Student</h2>
+  <label for= "delete_id">Record ID</label>
+  <input type= "text" id ="delete_id" name="delete_id" value="">
+  
+  <button onclick="deleteStudent()">Delete Student</button>
+ 
+  <div id="delete_message" name="delete_message"></div>
+ 
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="getID.js"></script>
+<script src="delete.js"></script>
+</body>
+</html>
